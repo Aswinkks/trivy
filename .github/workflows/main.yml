@@ -7,7 +7,8 @@ on:
 
 jobs:
   build:
-    permissions: write-all
+    permissions: 
+      security-events: write
     name: Build
     runs-on: ubuntu-20.04
     steps:
