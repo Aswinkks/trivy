@@ -24,6 +24,7 @@ jobs:
           image-ref: 'demo1'
           format: 'sarif'
           output: 'trivy-results.sarif'
+          command: --list-all-pkgs
 
       - name: Upload Trivy scan results to GitHub Security tab
         uses: github/codeql-action/upload-sarif@v2
