@@ -25,7 +25,7 @@ jobs:
           severity: 'UNKNOWN,LOW,MEDIUM,HIGH,CRITICAL'
           format: 'sarif'
           output: 'trivy-results.sarif'
-          command: --list-all-pkgs
+          command: "--list-all-pkgs"
 
       - name: Upload Trivy scan results to GitHub Security tab
         uses: github/codeql-action/upload-sarif@v2
