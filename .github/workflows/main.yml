@@ -1,8 +1,5 @@
 name: build
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:
@@ -16,7 +13,7 @@ jobs:
 
       - name: Build an image from Dockerfile
         run: |
-          docker build -t demo1 .
+          docker build -t demo-image .
 
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
